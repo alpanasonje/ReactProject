@@ -14,7 +14,11 @@ import StudentList from './components/StudentList';
 import Welcome from './components/Welcome';
 import MyForm from './components/MyForm';
 import FormTwo from './components/FormTwo';
-
+import Ex1 from './components/Ex1';
+import Ex2 from './components/Ex2';
+import Ex from './components/Ex';
+import GetAllPlacements from './components/GetAllPlacements';
+import { Button } from 'bootstrap';
 function App() {
   return (
     <div className="c1">
@@ -34,9 +38,15 @@ function App() {
           <StudentList/>
              <ComponentLifeCycle/>
                <MyForm/>Counter/>
+            <FormTwo/>
+            <Ex2/>
+           
             
      */}
-    <FormTwo/>
+   
+   <GetAllPlacements/>
+
+    
       </div>
       
   );
