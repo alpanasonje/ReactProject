@@ -7,7 +7,7 @@ class GetAllPlacements extends Component
     constructor(props)
     {
         super(props)
-        this.state={placements:[{}]}
+        this.state={placements:[]}
     }
     componentDidMount()
     {
@@ -21,7 +21,9 @@ class GetAllPlacements extends Component
     {
         return(
             <><h1>Placement Details</h1>
-            {this.state.placements.map((p)=>
+            
+            {this.state.placements.length>0?
+            this.state.placements.map((p)=>
             <table border="5" height="50" width="500">
                 <tr>
                 <td>{p.id}</td>
@@ -31,8 +33,7 @@ class GetAllPlacements extends Component
                 <td>{p.year}</td>
                 </tr>
             </table>
-            
-            )}
+            ):<h1>No Placement Data Available</h1>}
             </>
         );
     }
